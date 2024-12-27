@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0a0303;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            text-align:start ;
+            margin: 20px;
+            height: 200px;
+            width: 40%;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Omnivorous animals, or omnivores, are those that have the ability to consume and digest both plant and animal
+        matter. This diverse diet allows them to adapt to a wide range of environments and food sources. Omnivores play
+        important roles in ecosystems by controlling populations of both plants and animals and helping to disperse
+        seeds.</h1>
+
+
+    {% for i in d %}
+    <div>
+        <img src="{{ i.img_b1.url }}" alt="image"> <br>
+        <h3>{{i.name}}</h3> <br>
+        <p>{{i.description}}</p> <br>
+        <h2>{{i.sound}}</h2>
+    
+    </div>
+    
+    {% endfor %}
+
+    
+        
+</body>
+
+</html>

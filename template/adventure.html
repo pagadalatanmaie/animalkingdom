@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        body{
+            background-color:black;
+        }
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        aside{
+    cursor: pointer;
+    width: 15%;
+    height: 22px;
+    border-radius: 15px;
+    background-color: hwb(329 3% 52%);
+    /* border: 4px solid #d41610; */
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+        div{
+            background-color:gray;
+            border-radius: 20px 30px;
+
+            margin: 0 auto;
+            width: 30%;
+            border: 10px solid black;
+            padding: 15px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            font-size: 20px;
+            font-family: cursive;
+            color: bisque;
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+        aside{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome to the types of Animals page</h1>
+   <section>
+          <!-- ====carnivorus -->
+          <div>
+            <h2>Carnivorous Animals:</h2>
+            <img style="object-fit: cover;" src="https://th.bing.com/th?id=OIP.wu_ty-QvHvzsZUujZs1dzQHaE2&w=308&h=202&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+            <span style="color: blueviolet; font-size: 20px; font-family: cursive;">Definition: Carnivores are animals that primarily eat other animals.</span>
+            <ul>
+                <li>Lion</li>
+                <li>Tiger</li>
+                <li>Leopard</li>
+                <li>Hyena</li>
+                <li>Wolf</li>
+            </ul>
+            <aside>
+                <a href=" {% url 'home' %}">Home</a>
+                <a href="{% url 'carni' %}"><button style="width: 40px; background-color: aqua; border-radius: 12px 12px;">click here </button></a>
+
+             </aside>
+        </div>
+         <!-- omnivorus == -->
+         <div>
+            <h2>Ominivorus Animals:</h2>
+            <img style="object-fit: cover;" src="https://th.bing.com/th/id/OIP.Tki9Ok5BFpORRFINYu6D9wHaE8?w=249&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""> <br>
+            <span style="color: blueviolet; font-size: 20px; font-family: cursive;">Definition: Omnivores are animals that eat both plants and animals..</span> <br>
+            <ul>
+                <li>Bear</li>
+                <li>Human</li>
+                <li>Monkey</li>
+                <li>Pig</li>
+                <li>Rat</li>
+                <aside>
+                    <a href=" {% url 'home' %}">Home</a>
+                    <a href="{% url 'omni' %}"><button style="width: 40px; background-color: aqua; border-radius: 12px 12px;">click here </button></a>
+                 </aside>
+                 
+        </div>
+   </section>
+</body>
+</html>

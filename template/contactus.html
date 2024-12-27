@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Animal Kingdom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1f82a0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #020523;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content .section {
+            padding: 10px 0;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            color: rebeccapurple;
+        }
+
+        .content p {
+            margin: 0;
+            color: red;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Creator</h2>
+                <p>Hi, I'm P. Tanmaie from Nellore. I have created the Animal Kingdom website as part of my Django
+                    project. My passion for wildlife and web development has driven me to bring this site to life.</p>
+            </div>
+            <div class="section">
+                <h2>Website Description</h2>
+                <p>Animal Kingdom is a dedicated space where wildlife and wonder collide. Nestled in the heart of
+                    nature, our park offers an unforgettable experience for animal lovers of all ages. Wander through
+                    lush landscapes and get up close with a diverse range of animals, from majestic lions and tigers to
+                    playful monkeys and colorful birds.</p>
+            </div>
+            <div class="section">
+                <h2>Animals Content</h2>
+                <p>Our park is home to a wide variety of animals. From the ferocious carnivores to gentle herbivores,
+                    and from the smallest insects to the largest mammals, Animal Kingdom showcases the incredible
+                    diversity of the animal world. Explore our immersive exhibits and learn more about the fascinating
+                    creatures that inhabit our planet.</p>
+                <button style="width: 70px; color: #020523; letter-spacing: 2px; border-radius: 12px 12px; background-color: lightcoral;"><a href="{% url 'home' %}">HOME</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

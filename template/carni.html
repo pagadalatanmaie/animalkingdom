@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #0a0303;
+        color: white;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    </style>
+
+<body>
+    <h1>CARNIVOROUS ANIMALS</h1>
+    <h2>Carnivorous animals, often referred to as carnivores, are those that primarily feed on the flesh of other
+        animals. These predators play a crucial role in maintaining the balance of ecosystems by controlling the
+        populations of other species. Carnivores can be found across various habitats and exhibit a range of adaptations
+        that make them efficient hunters.</h2>
+
+    <div>
+
+        {% for i in data1 %}
+        <div>
+            <img src="{{i.image.url}}" alt="image">
+            <h3>{{i.name}}</h3>
+            <p>{{i.description}}</p>
+            <h2>{{i.sound}}</h2>
+            
+        </div>
+
+        {% endfor %}
+
+    </div>
+    <div>
+          {% for j in data2 %}
+        <div>
+            <img src="{{j.image.url}}" alt="image">
+            <h3>{{j.name}}</h3>
+            <p>{{j.description}}</p>
+            <h2>{{j.sound}}</h2>
+            
+        </div>
+
+        {% endfor %}
+    </div>
+    <div>
+        <div>
+            {% for k in data3 %}
+            <div>
+                <img src="{{k.image.url}}" alt="image">
+                <h3>{{k.name}}</h3>
+                <p>{{k.description}}</p>
+                <h2>{{k.sound}}</h2>
+                
+            </div>
+    
+            {% endfor %} 
+        </div>
+    </div>
+   
+</body>
+
+</html>
